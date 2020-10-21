@@ -63,6 +63,8 @@ section article{
     border: 1px solid silver;
     background: #f5f5f5;
     box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+    height: 90%;
+    width: 90%;
 }
 section article img{
     height:100%;
@@ -74,9 +76,11 @@ section article img:hover{
     height: 180%;
 }
 section{
+    padding-left: 100px;
+    padding-right: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    grid-gap: 0px;
 }
 
 section article:nth-child(1){
