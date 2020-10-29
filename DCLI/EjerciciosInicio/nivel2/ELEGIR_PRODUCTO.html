@@ -1,0 +1,145 @@
+<html id="elegirProd">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/CSS.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="IMG/izena.png" alt=""/>
+            </div>
+            <nav>
+                <span id="titulo">TIPOS DE MENU:</span> 
+                <select onchange="mostrarmenus()" id="comboMenus">
+                    <option value="elegir">Elige un tipo</option>
+                    <option value="basico">MENÚ BÁSICO</option>
+                    <option value="especial">MENÚ ESPECIAL</option>
+                </select>
+                <a onclick="hacerpedido()" href="#" id="elemCompra">COMPRAR</a> 
+                <a href="INDEX.html" id="elemCompra">VOLVER</a> 
+            </nav>
+        </header>
+        <h2 class="platosMenu">PRIMEROS PLATOS</h2>
+        <section>
+            <div class="card" data-basico="true" data-especial="false">
+                <img src="IMG/EnsaladaDePastaConPollo.png" alt=""/>
+                <p>Ensalada de  pasta con pollo</p>
+                <p><span>3€</span>
+                    <input type="checkbox" class="classCheckbox" value="3" data-titulo="Ensalada de  pasta con pollo" >Seleccionar                  
+                </p>
+            </div>
+            <div class="card" data-basico="false" data-especial="true">
+                <img src="IMG/LentejasLevantinas.png" alt=""/>
+                <p>Lentejas levantinas</p>
+                <p><span>2,5€</span>
+                    <input type="checkbox" class="classCheckbox" value="2.5" data-titulo="Lentejas levantinas" >Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="true" data-especial="false">
+                <img src="IMG/espinacasConJamon.png" alt=""/>
+                <p>Espinacas con Jamon</p>
+                <p><span>3€</span>
+                    <input type="checkbox" class="classCheckbox" value='3' data-titulo="Espinacas con Jamon">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="true" data-especial="true">
+                <img src="IMG/fideosOrientalesConSoja.png" alt=""/>
+                <p>Fideos orientales con soja</p>
+                <p><span>3,5€</span>
+                    <input type="checkbox" class="classCheckbox" value='3.5' data-titulo="Fideos orientales con soja">Seleccionar
+                </p>
+            </div>
+        </section>
+
+        <h2 class="platosMenu">SEGUNDOS PLATOS</h2>
+        <section>
+            <div class="card" data-basico="true" data-especial="false">
+                <img src="IMG/BacalaoEnSalsaDePiquillo.png" alt=""/>
+                <p>Bacalao en salsa de piquillo</p>
+                <p><span>4€</span>
+                    <input type="checkbox" class="classCheckbox" value='4' data-titulo="Bacalao en salsa de piquillo">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="true" data-especial="false">
+                <img src="IMG/EstofadoDePavo.png" alt=""/>
+                <p>Estofado de pavo</p>
+                <p><span>3€</span>
+                    <input type="checkbox" class="classCheckbox" value='3' data-titulo="Estofado de pavo">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="false" data-especial="true">
+                <img src="IMG/merluzaSalsaVerde.png" alt=""/>
+                <p>Merluza en salsa verde</p>
+                <p><span>3,5€</span>
+                    <input type="checkbox" class="classCheckbox" value='3.5' data-titulo="Merluza en salsa verde">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="false" data-especial="true">
+                <img src="IMG/salteadoDeVerduras.png" alt=""/>
+                <p>Salteado de verduras</p>
+                <p><span>2,5€</span>
+                    <input type="checkbox" class="classCheckbox" value='2.5' data-titulo="Salteado de verduras">Seleccionar
+                </p>
+            </div>
+        </section>
+
+        <h2 class="platosMenu">POSTRES</h2>
+        <section>
+            <div class="card" data-basico="false" data-especial="true">
+                <img src="IMG/CremosoDeMascarpone.png" alt=""/>
+                <p>Cremoso de Mascarpone</p>
+                <p><span>3€</span>
+                    <input type="checkbox" class="classCheckbox" value='3' data-titulo="Cremoso de Mascarpone">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="true" data-especial="false">
+                <img src="IMG/FlanDeLecheCondensada.png" alt=""/>
+                <p>Flan de leche condensada</p>
+                <p><span>3€</span>4€
+                    <input type="checkbox" class="classCheckbox" value='3' data-titulo="Flan de leche condensada">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="true" data-especial="false">
+                <img src="IMG/tiramisu.png" alt=""/>
+                <p>Tiramisu</p>
+                <p><span>3,25€</span>
+                    <input type="checkbox" class="classCheckbox" value='3.25' data-titulo="Tiramisu">Seleccionar
+                </p>
+            </div>
+            <div class="card" data-basico="true" data-especial="true">
+                <img src="IMG/tartaHeladaDeLimon.png" alt=""/>
+
+                <p>Tarta helada de limón</p>
+                <p> <span>3,5€</span>
+                    <input type="checkbox" class="classCheckbox" value='3.5' data-titulo="Tarta helada de limón">Seleccionar
+                </p>
+            </div>
+        </section>
+
+        <section id="Pedido">
+            <div id="fade" class="overlay"></div>
+            <div id="light" class="modal">
+                <div class="modalElem">
+                    <h2>PEDIDO REALIZADO</h2>
+                    <div id="hemenJarri"></div>
+                    <hr>
+                </div>
+                <div class="modalElem">
+                    <h2>DATOS DE ENTREGA</h2>
+                    <form id="formPedido" name="formPedido">
+                        <label for="nombre">NOMBRE </label><input onfocusout="mostrarcosas('edad')" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <label for="edad"> EDAD </label><input onkeypress="return esnumero(event)" onfocusout="mostrarcosas('direccion')" type="text" name="edad" id="edad">     
+                        <label for="direccion">DIRECCION </label> <input onfocusout="mostrarcosas('btnComprar')" type="text"  name="direccion"  id="direccion" placeholder="Direccion">
+
+                    </form>
+                    <button onclick="terminarcompra()" id="btnComprar">COMPRAR</button>
+                    <button onclick="cancelarpedido()" id="btnCancelar">CANCELAR</button>
+                </div>
+            </div>
+        </section>
+
+        <script src="JS/modal.js" type="text/javascript"></script>
+    </body>
+</html>
