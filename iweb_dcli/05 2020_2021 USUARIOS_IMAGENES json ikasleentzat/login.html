@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="login.css" rel="stylesheet" type="text/css"/>
-        <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-        <script src="js/scriptFroga.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <!--*********************************************************************************************-->
-        <div id="usuarioLogin"  >
-            <h2>USUARIO</h2>
-            <form class="formLogin"><!-- añadido class-->
-                <input type="text" id="email" class="email" placeholder="email@xx.xxx">
-                <br/>
-                <input type="text" id="pwd" class="pwd" placeholder="password">
-            </form>
-            <br/>
-            <button id="cancelar" class="cancelar">
-                <span>cancelar</span>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/scriptFroga.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!--*********************************************************************************************-->
+    <div id="usuarioLogin">
+        <h2>USUARIO</h2>
+        <form class="formLogin">
+            <!-- añadido class-->
+            <input type="text" id="email" class="email" placeholder="email@xx.xxx">
+            <br />
+            <input type="text" id="pwd" class="pwd" placeholder="password">
+        </form>
+        <br />
+        <button id="cancelar" class="cancelar">
+            <span>cancelar</span>
+        </button>
+        <button id="entrar" class="entrar">
+            <span>Entrar</span>
+        </button>
+    </div>
+    <!--*********************************************************************************************-->
+    <div id="datosUsuario">
+        <h2>DATOS DEL USUARIO</h2>
+        <form class="formUsu">
+            <fieldset class="datosGeneralesUsu">
+                <div class="elemUsu">
+                    <label>NOMBRE CONTACTO</label><input type="text" id="usuEmail" class="email" placeholder=""
+                        disabled>
+                </div>
+                <div class="elemUsu">
+                    <label>PASSWORD</label> <input type="text" id="usuPwd" class="pwd" placeholder="">
+                </div>
+                <div class="elemUsu">
+                    <label>NOMBRE</label><input type="text" id="usuNombre" class="email" placeholder="">
+                </div>
+                <div class="elemUsu">
+                    <label>APELLIDO</label><input type="text" id="usuApellido" class="email" placeholder="">
+
+            </fieldset>
+            <fieldset class="datosImagenPerfilUsu">
+                <h3>FOTO</h3>
+                <div id="usuImagen" class="imagenPerfilUsu"> </div>
+                <label>imagenes</label>
+                <select id="imagenesUsuarios">
+
+                </select>
+            </fieldset>
+        </form>
+        <div class="zonaBotones">
+            <!--incluyo esta lclase -->
+            <br />
+            <button class="salir">
+                <span>salir</span>
             </button>
-            <button id="entrar" class="entrar">
-                <span>Entrar</span>
+            <button class="guardar">
+                <span>guardar</span>
             </button>
         </div>
-        <!--*********************************************************************************************-->
-        <div id="datosUsuario" >
-            <h2>DATOS DEL USUARIO</h2>
-            <form class="formUsu">
-                <fieldset class="datosGeneralesUsu">
-                    <div class="elemUsu">
-                        <label>NOMBRE CONTACTO</label><input type="text" id="usuEmail" class="email" placeholder="" disabled>
-                    </div>
-                    <div class="elemUsu">
-                        <label>PASSWORD</label> <input type="text" id="usuPwd"  class="pwd" placeholder="">
-                    </div><div class="elemUsu">
-                        <label>NOMBRE</label><input type="text" id="usuNombre" class="email" placeholder="">
-                    </div><div class="elemUsu">
-                        <label>APELLIDO</label><input type="text" id="usuApellido" class="email" placeholder="">
+        <!--incluyo fin de  esta lclase -->
+    </div>
+    <!--*********************************************************************************************-->
+    <div id="datosAdmin">
+        <h2>USUARIOS</h2>
+        <div class="imagenesUsu">
 
-                        </fieldset>
-                        <fieldset class="datosImagenPerfilUsu">
-                            <h3>FOTO</h3>
-                            <div id="usuImagen" class="imagenPerfilUsu"> </div>
-                            <label>imagenes</label>
-                            <select id="imagenesUsuarios">
+        </div>
+        <br />
+        <div class="zonaDatosAdmin">
+            <label>NOMBRE CONTACTO</label><input type="text" id="usuActualEmail" class="email" disabled>
+            <label>PASSWORD</label> <input type="text" id="usuActualPwd" class="pwd" disabled>
+            <label>NOMBRE</label><input type="text" id="usuActualNombre" class="email" disabled>
+            <label>APELLIDO</label><input type="text" id="usuActualApellido" class="email" disabled>
+        </div>
+    </div>
 
-                            </select> 
-                        </fieldset>
-                        </form>
-                        <div class="zonaBotones"><!--incluyo esta lclase -->
-                            <br/>
-                            <button class="salir">
-                                <span>salir</span>
-                            </button>
-                            <button class="guardar">
-                                <span>guardar</span>
-                            </button>
-                        </div><!--incluyo fin de  esta lclase -->
-                    </div>   
-                    <!--*********************************************************************************************-->
-                    <div id="datosAdmin" >
-                        <h2>USUARIOS</h2>
-                        <div class="imagenesUsu">
+</body>
 
-                        </div>
-                        <br/>
-                        <div class="zonaDatosAdmin">
-                            <label>NOMBRE CONTACTO</label><input type="text" id="usuActualEmail" class="email" disabled>
-                            <label>PASSWORD</label> <input type="text" id="usuActualPwd"  class="pwd" disabled >
-                            <label>NOMBRE</label><input type="text" id="usuActualNombre" class="email" disabled>
-                            <label>APELLIDO</label><input type="text" id="usuActualApellido" class="email" disabled>
-                        </div>
-                    </div>
-
-                    </body>
-                    </html>
-
+</html>

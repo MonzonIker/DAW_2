@@ -1,18 +1,70 @@
-[{"idImagen":"1","imagen":"IMG/images1.jpg"},
-    {"idImagen":"2","imagen":"IMG/images2.jpg"},
-{"idImagen":"3","imagen":"IMG/images3.jpg"},
-  {"idImagen":"4","imagen":"IMG/images4.jpg"},
-{"idImagen":"5","imagen":"IMG/images5.jpg"},
-    {"idImagen":"6","imagen":"IMG/images6.jpg"},
-    {"idImagen":"7","imagen":"IMG/images7.jpg"},
-    {"idImagen":"8","imagen":"IMG/images8.jpg"},
-     {"idImagen":"9","imagen":"IMG/images9.jpg"},
-      {"idImagen":"10","imagen":"IMG/images10.jpg"},
-       {"idImagen":"11","imagen":"IMG/images11.jpg"},
-        {"idImagen":"12","imagen":"IMG/images12.jpg"},
-         {"idImagen":"13","imagen":"IMG/images13.jpg"},
-         {"idImagen":"14","imagen":"IMG/images14.jpg"}, 
-         {"idImagen":"15","imagen":"IMG/images15.jpg"},
-          {"idImagen":"16","imagen":"IMG/images16.jpg"},
-           {"idImagen":"17","imagen":"IMG/images17.jpg"}
- ]
+[
+  {
+    "idImagen": "1",
+    "imagen": "IMG/images1.jpg"
+  },
+  {
+    "idImagen": "2",
+    "imagen": "IMG/images2.jpg"
+  },
+  {
+    "idImagen": "3",
+    "imagen": "IMG/images3.jpg"
+  },
+  {
+    "idImagen": "4",
+    "imagen": "IMG/images4.jpg"
+  },
+  {
+    "idImagen": "5",
+    "imagen": "IMG/images5.jpg"
+  },
+  {
+    "idImagen": "6",
+    "imagen": "IMG/images6.jpg"
+  },
+  {
+    "idImagen": "7",
+    "imagen": "IMG/images7.jpg"
+  },
+  {
+    "idImagen": "8",
+    "imagen": "IMG/images8.jpg"
+  },
+  {
+    "idImagen": "9",
+    "imagen": "IMG/images9.jpg"
+  },
+  {
+    "idImagen": "10",
+    "imagen": "IMG/images10.jpg"
+  },
+  {
+    "idImagen": "11",
+    "imagen": "IMG/images11.jpg"
+  },
+  {
+    "idImagen": "12",
+    "imagen": "IMG/images12.jpg"
+  },
+  {
+    "idImagen": "13",
+    "imagen": "IMG/images13.jpg"
+  },
+  {
+    "idImagen": "14",
+    "imagen": "IMG/images14.jpg"
+  },
+  {
+    "idImagen": "15",
+    "imagen": "IMG/images15.jpg"
+  },
+  {
+    "idImagen": "16",
+    "imagen": "IMG/images16.jpg"
+  },
+  {
+    "idImagen": "17",
+    "imagen": "IMG/images17.jpg"
+  }
+]
