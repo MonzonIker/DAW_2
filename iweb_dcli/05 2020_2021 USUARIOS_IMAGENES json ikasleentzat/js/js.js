@@ -1,22 +1,21 @@
 $(document).ready(function () {
-    // alert(datos);
     $('#entrar').click(function () {
         email = $('#email').val();
         contraseña = $('#pwd').val();
+        console.log(email);
+        console.log(contraseña);
         if (email == "" || contraseña == "") {
             alert("Por favor rellene los datos");
         } else {
             $.ajax({
                 url: "JSON/Usuarios.json",
-                type: "POST",
+                type: "GET",
                 dataType: "json",
                 currentType: "application/json",
                 success: function (datos) {
                     
                     encontrado = false;
                     administrador = false;
-                    // alert(email);
-                    // alert(contraseña);
                     for (i = 0; i < datos.length; i++) {
                         if (email == datos[i].idUsuario && contraseña == datos[i].pasahitza) {
                             encontrado = true;
@@ -55,7 +54,7 @@ $(document).ready(function () {
                         // alert("entrando");
                         $.ajax({
                             url: "JSON/Imagenes.json",
-                            type: "POST",
+                            type: "GET",
                             dataType: "json",
                             currentType: "application/json",
                             success: function (datos) {
