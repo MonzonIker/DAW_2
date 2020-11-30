@@ -19,4 +19,7 @@ miApp.controller('miControlador', function ($scope) {
         $scope.aux = false;
     }
 
+    
+
+
 });

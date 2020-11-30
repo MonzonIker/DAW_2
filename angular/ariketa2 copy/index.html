@@ -14,17 +14,15 @@
 <body>
 
     <div ng-controller="miControlador">
-        <h1>PORQUE ANGULAR</h1>
-        <br>
-        Introduce el nombre: <input type="text" ng-model="nombre">
-        <br>
-        Introduce el apellido <input type="text" ng-model="apellido">
-        <button ng-click="SacarMensaje()">Saca mensaje</button>
-        <br>
 
-        <h2>El nombre introducido es: {{nombre}}</h2>
-        <h2>{{mensaje}}</h2><br>
-        <button ng-show="aux" ng-click="limpiarmsg()">Limpiar</button>
+        <div ng-style="estilo">
+            <h1>{{mensaje}}</h1>
+        </div>
+        <br>
+        <button ng-click="CambiarColor()">Color</button>
+        <br>
+        Introduce el nombre: <input type="text" ng-model="mensaje">
+        
     </div>
 
 </body>
