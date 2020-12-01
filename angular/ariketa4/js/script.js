@@ -1,7 +1,7 @@
-let myApp = angular.module('myApp', []);
+let myApp = angular.module('miApp', []);
 
-myApp.controller('myController', function ($scope) {
-    $scope.ver = false
+myApp.controller('miControlador', function ($scope) {
+    $scope.aux = false
     $scope.lista = [];
 
     $scope.cargar = function () {
@@ -9,12 +9,12 @@ myApp.controller('myController', function ($scope) {
 
         if ($scope.select != undefined) {
             $scope.lista.push({ nombre: $scope.select, curso: 1 });
-            $scope.ver = true;
+            $scope.aux = true;
         }
     }
 
     $scope.limpiar = function () {
         $scope.lista = [];
-        $scope.ver = false
+        $scope.aux = false
     }
 });
