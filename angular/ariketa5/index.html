@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" ng-app='miApp'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariketa5</title>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body ng-controller='miControlador'>
+    <table>
+        <tr ng-repeat="a in lista | filter:filtro">
+            <td>{{a.id}}</td>
+            <td>{{a.nombre}}</td>
+            <td>{{a.apellido1}}</td>
+            <td>{{a.apellido2}}</td>
+            <td>{{a.ciclo}}</td>
+            <td>{{a.curso}}</td>
+            <td><input type="checkbox" ng-model="a.seleccionado"></td>
+        </tr>
+
+    </table>
+
+    <div ng-show="botones">
+        <input type="button" value="Alumnonuevo" ng-click='vernuevo()'>
+        <input type="button" value="Eliminar Lista" ng-click='eliminartodo()'>
+        <input type="button" value="Eliminar Alumno" ng-click='eliminarselected()'>
+        <input type="button" value="Buscar" ng-click='verbuscar()'>
+
+    </div>
+
+    <div ng-show="formnuevo">
+        <input type="text" value={{idactual}} disabled><br>
+        <input type="text" value="" ng-model="newnombre"><br>
+        <input type="text" value="" ng-model="newape1"><br>
+        <input type="text" value="" ng-model="newape2"><br>
+        <input type="text" value="" ng-model="newciclo"><br>
+        <input type="text" value="" ng-model="newcurso"><br>
+
+
+        <input type="button" value="Añadir" ng-click='addnuevo()'>
+        <input type="button" value="Cancelar" ng-click='cancelarnuevo()'>
+
+    </div>
+
+    <div ng-show="buscar">
+        <input type="text" value="" ng-model="filtro">
+        <input type="button" value="Cancelar" ng-click='cancelarbuscar()'>
+    </div>
+    
+</body>
+</html>
