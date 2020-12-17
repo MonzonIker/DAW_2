@@ -50,11 +50,11 @@ En la actualidad existen un total de 13 servidores raíz DNS, y están nombrados
 ### ¿Cuántas redirecciones DNS son posibles?
 Todas las necesarias hasta encontrar respuesta a la direccion solicitada o hasta que un root DNS indique que no ha encontrado anda.
 ###  ¿Qué son los servidores DNS Raíz?
-Un Root Name Server es un servidor que desempeña la función de traducir nombres de dominio en direcciones IP
+Un Root Name Server es un servidor que desempeña la función de traducir nombres de dominio en direcciones IP, los servidores de nombres raíz son una parte fundamental de Internet, ya que son el primer paso en la traducción (resolución) de los nombres de host legibles en direcciones IP que se utilizan en la comunicación entre los hosts de Internet.
 ### ¿Para qué montar un servidor si simplemente escribiendo en un fichero la relación IP/Nombre el sistema ya funcionaría?
 Por que para poder comunicarte con otras direcciones tendrias que tener en el host la informacion y al estar en un servidor se puede consultar, por que se actualiza automaticamente al conectarse al servidor por que DNs actualiza el registro.
 ###  Según lo expuesto, y si en tu configuración de red del sistema operativo solamente posees un servidor DNS, entonces: ¿cuál sería el proceso para encontrar la IP de la dirección web: http://www.debian.org/distrib/netinst?
-El ordenador manda peticion a DNs y este lo reenvia hasta encontrarlo o llegar un root DNS.
+El ordenador manda peticion a DNS y este lo reenvia hasta encontrarlo o llegar un root DNS.
 ### ¿Es posible si dispones de una conexión a Internet con IP dinámica ofrecer servicios en Internet? Es decir, si quieres ofrecer los servicios SND, no dispones de IP estática, esto es, cada vez que te conectas a Internet tu IP, aunque a veces sea la misma, no siempre es la misma. 
 Si es posible con un DDNS que se encargaria de mantener actulizada la informacion
 ### ¿Qué es ICANN?
