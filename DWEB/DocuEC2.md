@@ -17,6 +17,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) proporciona capacidad de computación 
 Las direcciones IP elásticas son direcciones IPv4 estáticas diseñadas para la informática en la nube dinámica. Con una dirección IP elástica, puede enmascarar los errores de una instancia o software volviendo a mapear rápidamente la dirección a otra instancia de su cuenta.
 ### Imagen de mi EC2
 ![IP elastica](https://raw.githubusercontent.com/MonzonIker/DAW_2/main/DWEB/asociar%20ip%20elastica.png)
+![instamcia ya con ip elastica](https://github.com/MonzonIker/DAW_2/blob/main/DWEB/instanciaelastica.png?raw=true)
 ## DNS
 ###  ¿Qué es y para qué sirve el DNS?
 Los servidores DNS que controlan todo, más conocidos como Root Name Servers o DNS Root Servers, son los que gestionan las peticiones de traducción de un nombre de dominio a una dirección IP.
