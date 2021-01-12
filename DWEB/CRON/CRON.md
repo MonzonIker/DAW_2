@@ -24,3 +24,4 @@ No hace nada esta mal escrito
 Ejecuta el script prueba.sh a las 20:30 de lunes a viernes
 #### 1 0 1-7 * * [ "$(date '+%a')" = "Fri" ] && /etc/backup.sh
 Ejecutara esa linea que no entiendo y el script backup.sh, cada 00:01 los dias del 1 al 7 de cada mes
+
