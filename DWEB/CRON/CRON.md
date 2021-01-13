@@ -24,4 +24,19 @@ No hace nada esta mal escrito
 Ejecuta el script prueba.sh a las 20:30 de lunes a viernes
 #### 1 0 1-7 * * [ "$(date '+%a')" = "Fri" ] && /etc/backup.sh
 Ejecutara esa linea que no entiendo y el script backup.sh, cada 00:01 los dias del 1 al 7 de cada mes
-
+### Script 1
+Tenemos que crear un script que ponga un texto en otro documento y que cron lo haga cada 5 minutos
+```
+echo `date "+Hello $USER, today is %A, %B %dth, %Y and it's %H:%M:%S. I'm Iker."` >> pruebacron
+```
+y en crontab pondremos
+```
+*/5 * * * * scriptcron.sh >> pruebacron
+```
+para que lo haga cada 5 minutos y lo ponga en el otro documento y le damos permisos
+### Script 2
+Tenemos que crear una carpeta en /copias para guarar las copias y en crontab pondremos
+```
+*/15 * * * 2 tar -cf /copias/copia.tar.gz /home/ubuntu
+```
+para que lo haga cada 15 minutos los martes
